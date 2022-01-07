@@ -1,4 +1,4 @@
-# glucose-prediction-umich
+# HG_prediction
 
 Code for our ICASSP 2022 paper "Joint hypoglycemia prediction and glucose forecasting via deep multi-task learning", by Mu Yang, Darpit Dave, Madhav Erraguntla, Gerard L. Cote and Ricardo Gutierrez-Osuna. 
 
