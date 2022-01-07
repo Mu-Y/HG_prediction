@@ -15,14 +15,12 @@ pip install joblib sklearn datetime
 
 ## Run code
 
-1. Preprocess data. 
-
-TODO
+1. Preprocess data. TODO
 
 
 2. Train and evaluate models. The multitask learning model (MT-NB-L*, MT-NB) and single-task model (NB-tsf, LSTM-cls) was controled by loss weights arguments (see `train.py`):
-  - `-cat_loss_weight`: control the classification task. If > 0, will do classification task
-  - `-IL`, `-FIL`, `-SL`: control the time series forecastng task. When all three are True, will do the time series forecasting task described in the Umich paper.
+  - `-cat_loss_weight`: control the classification task. If > 0, will do classification task.
+  - `-IL`, `-FIL`, `-SL`: control the time series forecastng task. When all three are True, will do the time series forecasting task described in [N-BEATS](http://ceur-ws.org/Vol-2675/paper18.pdf).
   - `norm_mse`: Bool, control whether use the Normarlized MSE loss.
   - You may need to change `-outstr` for output model path, and `-datadir` for data path.
   
@@ -44,5 +42,5 @@ TODO
 
 ## Acknowledgement
 
-Codes are adapted from https://gitlab.eecs.umich.edu/mld3/deep-residual-time-series-forecasting, which is official implementation of the glucose forecasting paper using [N-BEATS](http://ceur-ws.org/Vol-2675/paper18.pdf).
+Codes are adapted from https://gitlab.eecs.umich.edu/mld3/deep-residual-time-series-forecasting, which is the official implementation of [N-BEATS](http://ceur-ws.org/Vol-2675/paper18.pdf) for glucose forecasting.
  
